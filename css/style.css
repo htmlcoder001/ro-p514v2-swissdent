@@ -1,0 +1,121 @@
+.blur1{
+    margin: 20px auto;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+.blur1::before{content:"18+";color:#fff;font-weight:bold;font-size:100px;position:absolute;top:45%;margin-left:auto;margin-right:auto;left:0;right:0;text-align:center;z-index:1;text-shadow:0 0 10px #000}
+.blur{filter:blur(.7);-webkit-filter:blur(10px)}{filter:blur(.7);-webkit-filter:blur(10px)}
+
+
+.comment {
+    border-bottom: 1px solid #dae1e8!important;
+    padding-bottom: 15px!important;
+    margin-bottom: 15px!important;
+}
+
+.comment .avatar {
+    border-radius: 100%;
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.comm_text {
+    position: relative;
+    background-color: #bfbfbf26;
+    border-radius: 7px;
+    display: inline-block;
+    vertical-align: top;
+    width: -webkit-calc(100% - 65px);
+    width: -moz-calc(100% - 65px);
+    width: calc(100% - 65px)
+}
+
+.comm_text .user_name {
+    color: rgb(36, 36, 36);
+    font-weight: 600;
+    font-size: 13px!important;
+    margin-bottom: 0!important;
+    padding: 0 10px!important;
+}
+
+.comm_text .text {
+    font-size: 15px!important;
+    padding: 0 10px!important;
+}
+
+.comm_text .time {
+    color: #999;
+    margin-bottom: 0
+}
+
+.comments {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.down-menu {
+    display: flex;
+    margin-left: 60px;
+    margin-top: 5px;
+}
+
+.down-menu p {
+    cursor: pointer;
+    color: rgb(119, 119, 119);
+    font-weight: 600;
+    font-size: 12px!important;
+    margin: 0!important;
+    margin-bottom: 16px!important;
+    padding: 0 10px!important;
+}
+.emodji {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    box-shadow: -3px 2px 5px rgb(133, 133, 133);
+    border-radius: 15px;
+    position: absolute;
+    background-color: white;
+    right: 10px;
+    bottom: -5px;
+    padding: 2px 0;
+    padding-right: 5px;
+    color: #999;
+}
+
+.emodji img {
+    margin: 0;
+}
+.knopka{
+    padding: 20px;
+    background-color: black;
+    font-size: 30px;
+    color: #fff;
+    border-radius: 50px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    text-decoration: none;
+}
+.main{
+    padding-top: 180px;
+}
+@media (max-width:500px) {
+    .none {
+        display: none;
+    }
+    .main{
+        padding-top: 130px;
+    }
+}
+
