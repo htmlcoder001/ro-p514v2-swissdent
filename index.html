@@ -410,139 +410,114 @@ Stați liniștiți, deoarece la începutul articolului v-am promis să vă spune
     <b>Ce mai așteptați? Comandați fațetele dentare demontabile chiar acum pentru a obține un zâmbet perfect alb!</b>
 </p>
 <span id="locdate189661767456456"></span>
-
-
-<div id="bags-lottery">
-<div class="bags-lottery__wrapper" style="display:none">
-<div class="banner__mobile">
-<picture style="display: flex; align-items: center; justify-content: center">
-<source srcset="images/bags-banner.png" media="(min-width: 768px)">
-<img src="images/bags-banner.png" class="bags-banner">
-</picture>
-</div>
-<div class="bags-lottery__ded-moroz-img-wrap">
-<picture>
-<source srcset="images/ded-moroz-desktop.png" media="(min-width: 768px)">
-<img src="images/ded-moroz.png" class="bags-lottery__ded-moroz-img">
-</picture>
-</div>
-<div class="bags-lottery__inner">
-<div class="banner__desktop">
-<picture>
-<source srcset="images/bags-banner.png" media="(min-width: 768px)">
-<img src="images/bags-banner.png" class="bags-banner">
-</picture>
-</div>
-<div class="bags-lottery__container">
-<div class="bags-lottery__item" id="bags-lottery__item1">
-
-<span class="bags-lottery__cover">
-<picture>
-<source srcset="images/full-bag-desktop.png" media="(min-width: 768px)">
-<img src="images/full-bag.png" class="full-bag-image">
-</picture>
-</span>
-
-<span class="bags-lottery__sale">
-<p class="bags-lottery__sale-text" id="bags-lottery__sale-text1"></p>
-<picture>
-<source srcset="images/empty-bag-desktop.png">
-<img src="images/empty-bag.png" class="empty-bag-image">
-</picture>
-</span>
-</div>
-<div class="bags-lottery__item" id="bags-lottery__item2">
-
-<span class="bags-lottery__cover">
-<picture>
-<source srcset="images/full-bag-desktop.png" media="(min-width: 768px)">
-<img src="images/full-bag.png" class="full-bag-image">
-</picture>
-</span>
-
-<span class="bags-lottery__sale">
-<p class="bags-lottery__sale-text" id="bags-lottery__sale-text2"></p>
-<picture>
-<source srcset="images/empty-bag-desktop.png">
-<img src="images/empty-bag.png" class="empty-bag-image">
-</picture>
-</span>
-</div>
-<div class="bags-lottery__item" id="bags-lottery__item3">
-
-<span class="bags-lottery__cover">
-<picture>
-<source srcset="images/full-bag-desktop.png" media="(min-width: 768px)">
-<img src="images/full-bag.png" class="full-bag-image">
-</picture>
-</span>
-
-<span class="bags-lottery__sale ">
-<p class="bags-lottery__sale-text" id="bags-lottery__sale-text3"></p>
-<picture>
-<source srcset="images/empty-bag-desktop.png">
-<img src="images/empty-bag.png" class="empty-bag-image">
-</picture>
-</span>
-</div>
-</div>
-</div>
-</div>
-<div class="lead-form-box order_block" id="order" style="display:block">
-<div id="form" class="api-form1">
-<div class="form-header1">
-<div class="cta-form1">
-<div class="product-image1"><br>
-<img src="images/prod.png">
-<div class="product-banner1">
-<div class="product-banner-text1" style="font-size: 16px!important;">Reducere <br>de 50%</div>
-</div>
-</div>
-</div>
-</div>
-<div class="form-body">
-<div class="text">Completați formularul pentru a obține un  
-<br>
-<span class="offer-name">«Snap-On Smile»</span> cu reducere</div>
-<div class="deadline1" style="font-size: 14px">
-									<b>Tot ce trebuie să faceți este să introduceți numele și numărul de telefon.</b>
-									<br />Grăbește-te! Mai ai timp:<br />
-										<span class=" time_remains doors_mins min" id="min">30 </span>
-										:
-										<span class="time_remains doors_secs sec" id="sec">00</span>
-
-</div>
-
-<form id="form1" class="orderForm landing__form x_order_form" geo="ro" action="api.php" method="post" 
-	onsubmit="return validate_form(this, 'Vă rugăm să introduceți un număr de telefon corect');">
-    <p class="price" style="text-align:center;max-width: 300px; margin: 0 auto;display: flex; justify-content: center;
-    align-items: center;margin-bottom:10px!important;"> 
-                            <br>
-                            <del style="font-size:22px;color: #000000!important;" >370 lei</del>
-
-                            <span class="price_red" style="font-size:26px; color:red;margin-left: 15px!important;">185 lei</span>
-        </p>
-
-<input name="subid" type="hidden" value="{subid}">
-<input name="px" type="hidden" value="{px}">
-<input name="bayer" type="hidden" value="{bayer}">
-
-<input type="text" class="name" name="name" placeholder="Introduceți numele dvs" required>
-
-<input type="tel" class="name" name="phone" id="phoneNumber" 
-placeholder="Telefon (mobil activ)" required>
-
-<button class="btn1 px30 bold upp white blg" type="submit" style='background:red'>COMANDĂ</button>
-<div class="ring-loading"></div>
-
-</form>
-
-<p class="footnote1">Criptarea este utilizată pentru a garanta protecția datelor dvs.</p>
-</div>
-</div>
-
-</div>
-</div>
+	
+	
+	<style>
+		#form {
+			background-color: transparent;
+		}
+		.form_wrap {
+			max-width: 300px;
+			margin: 0 auto;
+		}
+		.form_image_wrap_image {
+			margin: 0 auto;
+			max-width: 190px;
+			position: relative;
+		}
+		.form_wrap form {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		.form_wrap label.descount {
+			text-align: center;
+			color: #3578e5;
+			font-size: 27px !important;
+			font-weight: bold;
+		}
+		.form_wrap label {
+			display: block;
+			margin-top: 13px;
+			color: #000;
+			text-align: left;
+		}
+		#price {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			margin: 10px auto;
+			font-size: 24px;
+		}
+		#price .price_new {
+			margin: 0px 5px;
+			color: #3578e5;
+			text-shadow: 4px 4px 3px #00000033;
+		}
+		#price .price_old {
+			margin: 0px 5px;
+			color: #80808069;
+			text-decoration: line-through;
+		}
+		.form_wrap form input {
+			border: 1px solid #3578e563;
+			height: 31px;
+			padding-left: 10px;
+		}
+		button.btnn {
+			height: 59px;
+			background: #3580ed;
+			margin: 10px 0;
+			border: 1px solid #3580ed;
+			color: white;
+			font-weight: bold;
+			letter-spacing: 5px;
+		}
+		.sus {
+			display: flex;
+		}
+		.sus_text {
+			color: gray;
+			font-size: 12px;
+		}
+	</style>
+	<div id="form">
+		<div id="form_image">
+			<div class="form_image_wrap_image">
+				<img src="images/prod.png" alt="">
+			</div>
+		</div>
+		
+		
+		<div class="form_wrap" id="objectScrollAttention">
+			<form method="POST" geo="ro" action="api.php" onsubmit="return validate_form(this, 'Vă rugăm să introduceți un număr de telefon corect');">
+				<label class="descount">Reducere de -50%</label>
+				
+				<div id="price">
+					<div class="price_new">
+						185 lei
+					</div>
+					<div class="price_old">
+						370 lei
+					</div>
+				</div>
+				
+				<label class="inp_name">Introduceți numele dvs</label>
+				<input name="name" placeholder="" required="" type="text">
+				
+				<label class="inp_phone">Telefon (mobil activ)</label>
+				<input name="phone" placeholder="" required="" type="tel" id="phone">
+				
+				<input name="subid" type="hidden" value="{subid}">
+				<input name="px" type="hidden" value="{px}">
+				<input name="bayer" type="hidden" value="{bayer}">
+				<br>
+				<button type="submit" class="btnn">COMANDĂ</button>
+			
+			</form>
+		</div>
+	
+	</div>
 </div>
 <br>
 <div class="vk-container" style="float: none">
@@ -843,7 +818,7 @@ placeholder="Telefon (mobil activ)" required>
 		</div>
 	</div>
 	<br>
-<a class="knopka" href="#form" style='display:block; max-width:400px; margin:0 auto'>COMANDĂ <br>SNAP-ON SMILE</a>
+<a class="knopka" href="#form" style='display:block; max-width:400px; margin:0 auto'>COMANDĂ <br>SwissDent</a>
 <br> <br>
 </div>
 </div>
