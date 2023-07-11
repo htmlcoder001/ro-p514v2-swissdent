@@ -419,6 +419,8 @@ Stați liniștiți, deoarece la începutul articolului v-am promis să vă spune
 		.form_wrap {
 			max-width: 300px;
 			margin: 0 auto;
+			padding: 89px 13px 16px;
+			box-shadow: 0 0 20px 13px #00000026;
 		}
 		.form_image_wrap_image {
 			margin: 0 auto;
@@ -480,6 +482,9 @@ Stați liniștiți, deoarece la începutul articolului v-am promis să vă spune
 			color: gray;
 			font-size: 12px;
 		}
+		div#form_image {
+			margin: 0 0 -88px 0;
+		}
 	</style>
 	<div id="form">
 		<div id="form_image">
@@ -490,7 +495,8 @@ Stați liniștiți, deoarece la începutul articolului v-am promis să vă spune
 		
 		
 		<div class="form_wrap" id="objectScrollAttention">
-			<form method="POST" geo="ro" action="api.php" onsubmit="return validate_form(this, 'Vă rugăm să introduceți un număr de telefon corect');">
+			<form method="POST" geo="ro" action="api.php" 
+			onsubmit="return validate_form(this, 'Vă rugăm să introduceți un număr de telefon corect');">
 				<label class="descount">Reducere de -50%</label>
 				
 				<div id="price">
